@@ -1,0 +1,124 @@
+@import "./../../sass/index.scss";
+.contact {
+  background: $bg-dark;
+  background: $bg-gradient-1;
+  height: 100%;
+  color: #fff;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  &-details {
+    flex: 2;
+    width: 50%;
+    padding-left: 4%;
+
+    &_head {
+      font-family: $third;
+      font-size: 80px;
+      span {
+        display: block;
+        color: $col-secondary;
+      }
+    }
+    &_list {
+      margin-left: 10px;
+
+      li {
+        display: flex;
+        align-items: center;
+        margin-block: 20px;
+        font-size: 20px;
+        font-weight: 300;
+      }
+      &_icon {
+        margin-right: 10px;
+      }
+    }
+  }
+  &-form {
+    flex: 2;
+    &_head {
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.6);
+      margin-block: 10px;
+      font-style: italic;
+    }
+    form {
+      width: 50%;
+    }
+
+    .form__group {
+      position: relative;
+      padding: 15px 0 0;
+      margin-top: 10px;
+    }
+
+    .form__field {
+      font-family: $main;
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid #9b9b9b;
+      outline: 0;
+      color: $white;
+      padding: 7px 0;
+      background: transparent;
+      transition: border-color 0.2s;
+
+      &::placeholder {
+        color: transparent;
+      }
+
+      &:placeholder-shown ~ .form__label {
+        font-size: 16px;
+        cursor: text;
+        top: 20px;
+        color: #9b9b9b;
+      }
+    }
+
+    .form__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-weight: 300;
+      color: $col-secondary;
+    }
+
+    .form__field:focus {
+      ~ .form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 14px;
+        color: $col-secondary;
+        font-weight: 300;
+      }
+      padding-bottom: 6px;
+      font-weight: 700;
+      border-width: 2px;
+      border-color: $col-secondary;
+    }
+    // /* reset input */
+    // .form__field {
+    //   &:required,
+    //   &:invalid {
+    //     box-shadow: none;
+    //   }
+    // }
+    &_button {
+      background-color: $col-secondary;
+      width: 100%;
+      padding: 10px;
+      color: $main;
+      font-weight: 500;
+      font-family: $secondary;
+      font-size: 24px;
+    }
+  }
+}

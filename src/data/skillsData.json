@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "name": "HTML",
+    "img": "img/icon/skills/html.svg",
+    "imgHover": "img/icon/skills/hover/html-5.svg"
+  },
+  {
+    "id": 2,
+    "name": "CSS",
+    "img": "img/icon/skills/css.svg"
+  },
+  {
+    "id": 3,
+    "name": "JavaScript",
+    "img": "img/icon/skills/javascript.svg"
+  },
+  {
+    "id": 4,
+    "name": "jQuery",
+    "img": "img/icon/skills/jquery.svg"
+  },
+  {
+    "id": 5,
+    "name": "Boostrap",
+    "img": "img/icon/skills/bootstrap.svg"
+  },
+  {
+    "id": 6,
+    "name": "SASS",
+    "img": "img/icon/skills/sass.svg"
+  },
+  {
+    "id": 7,
+    "name": "React.js",
+    "img": "img/icon/skills/reactjs.svg"
+  },
+  {
+    "id": 8,
+    "name": "Node.js",
+    "img": "img/icon/skills/node-js.svg"
+  },
+  {
+    "id": 9,
+    "name": "Express.js",
+    "img": "img/icon/skills/expressjs.svg"
+  },
+  {
+    "id": 10,
+    "name": "MongoDB",
+    "img": "img/icon/skills/mongodb.svg"
+  },
+  {
+    "id": 11,
+    "name": "MySQL",
+    "img": "img/icon/skills/mysql.svg"
+  },
+  {
+    "id": 12,
+    "name": "Figma",
+    "img": "img/icon/skills/figma.svg"
+  },
+  {
+    "id": 13,
+    "name": "Adobe XD",
+    "img": "img/icon/skills/adobe-xd.svg"
+  },
+  {
+    "id": 14,
+    "name": "Adobe Photoshop",
+    "img": "img/icon/skills/adobe-photoshop.svg"
+  },
+  {
+    "id": 15,
+    "name": "Adobe Illustrator",
+    "img": "img/icon/skills/adobe-illustrator.svg"
+  },
+  {
+    "id": 16,
+    "name": "Microsoft Word",
+    "img": "img/icon/skills/microsoft-word.svg"
+  },
+  {
+    "id": 17,
+    "name": "Microsoft Excel",
+    "img": "img/icon/skills/microsoft-excel.svg"
+  },
+  {
+    "id": 18,
+    "name": "Microsoft Power BI",
+    "img": "img/icon/skills/power-bi.svg"
+  }
+]

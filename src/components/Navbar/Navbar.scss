@@ -1,0 +1,48 @@
+@import "./../../sass/index.scss";
+
+.navbar {
+  color: $white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0px 40px;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+  //   &-logo {
+  //     flex: 1;
+  //     font-size: 30px;
+  //     font-family: $secondary;
+  //   }
+
+  &-greeting {
+    flex: 10;
+    display: flex;
+    align-items: center;
+    font-family: $mont;
+
+    p {
+      font-size: 14px;
+
+      // span {
+      //   font-size: 16px;
+      //   font-weight: 600;
+      // }
+    }
+  }
+  &-icon {
+    font-size: 22px;
+    margin-right: 10px;
+    margin-left: 10px;
+    path {
+      stroke: #fff !important;
+    }
+  }
+  &-menu {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 18px;
+  }
+}

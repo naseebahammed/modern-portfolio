@@ -1,0 +1,27 @@
+@import "./sass/index.scss";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  font-family: $main;
+}
+.App {
+  position: relative;
+  scroll-behavior: smooth;
+}
+.container {
+  //position: relative;
+  //height: 100%;
+}
+.wrapper {
+  display: block;
+  // position: absolute;
+  top: 70px;
+  left: 80px;
+  width: calc(100vw - 100px);
+  min-height: calc(100vh - 70px);
+}

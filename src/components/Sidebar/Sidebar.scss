@@ -1,0 +1,32 @@
+@import "./../../sass/index.scss";
+.sidebar {
+  color: $white;
+  font-family: $secondary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  bottom: 0px;
+  width: 80px;
+  z-index: 9999;
+
+  &-count {
+    flex: 3;
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.1);
+  }
+  &-social {
+    flex: 1;
+    margin-bottom: 40px;
+    li > * {
+      color: #fff;
+      font-size: 24px;
+      margin-block: 14px;
+    }
+  }
+  &-invert > * {
+    color: #000;
+  }
+}

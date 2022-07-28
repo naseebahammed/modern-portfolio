@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "jobRole": "Web Designer & Product Specialist",
+    "company": "TS Qatar Systems & Communications",
+    "place": "Doha, Qatar",
+    "duration": "April 2021 - Present"
+  },
+  {
+    "id": 2,
+    "jobRole": "Front End Developer",
+    "company": "Task19 Technologies",
+    "place": "Kerala, India",
+    "duration": "Sep 2021 - Feb 2021"
+  },
+  {
+    "id": 3,
+    "jobRole": "UI Designer & Front End Developer",
+    "company": "Freelance",
+    "place": "Kerala, India",
+    "duration": "Mar 2020 – Sep 2020"
+  },
+  {
+    "id": 4,
+    "jobRole": "Web Desiging Trainer",
+    "company": "G-TEC COMPUTER INSTITUTION",
+    "place": "Kerala, India",
+    "duration": "Aug 2019 – Feb 2020"
+  }
+]

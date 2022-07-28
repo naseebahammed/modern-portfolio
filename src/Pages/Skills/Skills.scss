@@ -1,0 +1,40 @@
+@import "./../../sass/index.scss";
+.skills {
+  position: relative;
+  background: #fff;
+  height: 100%;
+
+  &-header {
+    font-family: $secondary;
+
+    &_heading {
+      font-size: 80px;
+      font-weight: 600;
+    }
+    &_para {
+      font-size: 18px;
+      font-family: $main;
+      color: $light-grey;
+    }
+  }
+  &-items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    margin-block: 20px;
+    li {
+      margin: 0 auto;
+      width: 180px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $light-grey;
+      &:hover {
+        box-shadow: 0px 0px 6px 6px rgba($col-secondary, 0.2);
+        border: none;
+      }
+    }
+  }
+}
