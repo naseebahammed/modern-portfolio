@@ -2,20 +2,19 @@
 .home {
   background: $bg-dark;
   background: $bg-gradient-1;
-  height: 100%;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%;
 
-  // @media only screen and (min-width: 1440px) {
-  //   & {
-  //     min-height: calc(80vh - 70px);
-  //   }
-  // }
-
-  &-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
+  @media only screen and (max-width: 768px) {
+    & {
+      flex-direction: column;
+    }
   }
+
   &-text {
     display: flex;
     justify-content: space-around;
@@ -53,6 +52,21 @@
   &-image {
     //width: 40%;
     flex: 1;
+    @media only screen and (max-width: 1160px) {
+      & {
+        img {
+          //width: 500px;
+          width: 100%;
+        }
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      & {
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
   &-claw {
     &_up,

@@ -14,10 +14,10 @@ function App() {
       <Navbar />
       <Sidebar />
       <Home />
-      <Quote />
+      {/* <Quote />
       <Experience />
       <Skills />
-      <Contact />
+      <Contact /> */}
       {/* <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />

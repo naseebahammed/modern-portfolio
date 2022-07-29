@@ -14,14 +14,14 @@ body {
   scroll-behavior: smooth;
 }
 .container {
-  //position: relative;
-  //height: 100%;
+  position: relative;
+  height: 100%;
 }
-.wrapper {
-  display: block;
-  // position: absolute;
-  top: 70px;
-  left: 80px;
-  width: calc(100vw - 100px);
-  min-height: calc(100vh - 70px);
-}
+// .wrapper {
+//   display: block;
+//   // position: absolute;
+//   top: 70px;
+//   left: 80px;
+//   width: calc(100vw - 100px);
+//   min-height: calc(100vh - 70px);
+// }
