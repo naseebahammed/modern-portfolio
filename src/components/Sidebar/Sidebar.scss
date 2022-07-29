@@ -6,17 +6,20 @@
   flex-direction: column;
   align-items: center;
   position: fixed;
-  top: 50px;
+  //top: 0px;
   left: 0;
-  bottom: 0px;
+  bottom: 50px;
   width: 80px;
   z-index: 9999;
-
-  &-count {
-    flex: 3;
-    font-size: 60px;
-    color: rgba(255, 255, 255, 0.1);
+  @media screen and (max-width: 425px) {
+    display: none;
   }
+
+  // &-count {
+  //   flex: 3;
+  //   font-size: 60px;
+  //   color: rgba(255, 255, 255, 0.1);
+  // }
   &-social {
     flex: 1;
     margin-bottom: 40px;
@@ -24,6 +27,11 @@
       color: #fff;
       font-size: 24px;
       margin-block: 14px;
+
+      @media screen and (max-width: 425px) {
+        font-size: 16px !important;
+        margin-block: 8px;
+      }
     }
   }
   &-invert > * {

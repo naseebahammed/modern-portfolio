@@ -1,10 +1,12 @@
 import React from "react";
 import "./Home.scss";
 import { motion } from "framer-motion";
+import Sidebar from "../../components/Sidebar/Sidebar";
 
 const Home = () => {
   return (
     <div className="container">
+      <Sidebar />
       <div className="home">
         <div className="home-text">
           <div className="home-claw_up">
