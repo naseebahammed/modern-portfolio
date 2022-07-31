@@ -2,7 +2,15 @@
 .skills {
   position: relative;
   background: #fff;
-  height: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  // display: flex;
+  // align-items: center;
+  // flex-direction: column;
+  width: 80%;
+  @media screen and (max-width: 1440px) {
+    width: 80%;
+  }
 
   &-header {
     font-family: $secondary;
@@ -21,8 +29,28 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
-    grid-gap: 20px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
     margin-block: 20px;
+
+    @media screen and (max-width: 1440px) {
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 50px;
+      margin-block: 50px !important;
+    }
+    @media screen and (max-width: 1250px) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 50px;
+      margin-block: 50px !important;
+    }
+
+    @media screen and (max-width: 760px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+    @media screen and (max-width: 490px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
     li {
       margin: 0 auto;
       width: 180px;
@@ -34,6 +62,29 @@
       &:hover {
         box-shadow: 0px 0px 6px 6px rgba($col-secondary, 0.2);
         border: none;
+      }
+      @media screen and (max-width: 1000px) {
+        width: 120px;
+        height: 120px;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      @media screen and (max-width: 760px) {
+        width: 120px;
+        height: 120px;
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      @media screen and (max-width: 760px) {
+        img {
+          width: 80px;
+          height: 80px;
+        }
       }
     }
   }

@@ -2,13 +2,23 @@
 .experience {
   position: relative;
   background: #fff;
-  min-height: 100%;
+  min-height: 100vh;
+  width: 80%;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+    padding-block: 20%;
+  }
 
   &-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: $secondary;
+    margin-bottom: 40px;
+
     &_text {
       display: flex;
       flex-direction: column;
@@ -29,24 +39,25 @@
       margin-right: 60px;
       font-weight: 600;
       color: $light-grey;
+      @media only screen and (max-width: 595px) {
+        display: none;
+      }
     }
   }
   &-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 94%;
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-
     min-height: 100%;
     margin-bottom: 40px;
     grid-gap: 50px;
 
-    // @media only screen and (min-width: 1440px) {
-    //   grid-template-columns: 1fr 1fr;
-    // }
+    @media only screen and (max-width: 1700px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
   &-card {
     min-height: 50vh;
@@ -61,11 +72,9 @@
 
     &:hover {
       transform: translateY(-10px);
-      //box-shadow: 0px 0px 10px rgba($col-secondary, 0.8);
 
       &::after {
         background-color: rgba($col-secondary, 0.4);
-        //box-shadow: 0px 0px 10px rgba($col-secondary, 0.8);
         opacity: 1;
       }
     }
@@ -80,8 +89,16 @@
       bottom: -50px;
       left: 0;
       transition: all 0.5s ease-in-out;
-
-      //border: 2px solid rgba(255, 255, 255, 1);
+      @media only screen and (max-width: 1000px) {
+        width: 300px;
+        bottom: -30px;
+      }
+    }
+    @media only screen and (max-width: 1700px) {
+      min-height: 400px;
+    }
+    @media only screen and (max-width: 1000px) {
+      width: 300px;
     }
 
     &_heading {
